@@ -1,7 +1,7 @@
 # Sfdx
 
 ##  lwcforFlow
-### Embed LWC in Screen Flow 
+- Embed LWC in Screen Flow 
 
 ## embedFlowInLWC
-###  Embed Screen Flow in LWC
+- Embed Screen Flow in LWC
