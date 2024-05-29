@@ -1,0 +1,16 @@
+<template>
+  <lightning-card icon-name="standard:account" variant="base">
+    <div slot="title">
+        Update Record
+    </div>
+    <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}>
+        <lightning-messages></lightning-messages>
+        <lightning-input-field field-name="Name" variant="standard"></lightning-input-field>
+        <lightning-input-field field-name="Type" variant="standard"></lightning-input-field>
+        <lightning-input-field field-name="Industry" variant="standard"></lightning-input-field>
+        <lightning-input-field field-name="NumberOfEmployees" variant="standard"></lightning-input-field>
+        <lightning-button type="submit" variant="brand" label="Save"></lightning-button>
+    </lightning-record-edit-form>
+  </lightning-card>
+  
+</template>
