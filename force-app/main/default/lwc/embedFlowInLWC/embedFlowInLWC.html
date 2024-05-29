@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-m-around_medium">
+      <lightning-card>
+        <div class="slds-m-around_medium">
+          <template if:true={isPartner}>
+            <lightning-flow
+              flow-api-name="PartnerFlow"
+              flow-input-variables={inputVariables}
+              onstatuschange={handleStatusChange}
+            ></lightning-flow>
+          </template>
+          <template if:true={isCustomer}>
+            <lightning-flow
+              flow-api-name="customerFlow"
+              flow-input-variables={inputVariables}
+              onstatuschange={handleStatusChange}
+            ></lightning-flow>
+          </template>
+        </div>
+      </lightning-card>
+    </div>
+</template>
